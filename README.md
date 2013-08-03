@@ -1,6 +1,6 @@
 == README
 
-# Ruby on Rails Tutorial from Michale Hartl 
+Ruby on Rails Tutorial from Michael Hartl 
 
 This README would normally document whatever steps are necessary to get the
 application up and running.
