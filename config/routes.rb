@@ -1,4 +1,8 @@
 FirstApp::Application.routes.draw do
+  resources :posts
+
+  resources :customers
+
   resources :microcomments
 
   # The priority is based upon order of creation: first created -> highest priority.
