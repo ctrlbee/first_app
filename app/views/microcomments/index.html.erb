@@ -1,0 +1,29 @@
+<h1>Listing microcomments</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Status</th>
+      <th>User</th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @microcomments.each do |microcomment| %>
+      <tr>
+        <td><%= microcomment.status %></td>
+        <td><%= microcomment.user_id %></td>
+        <td><%= link_to 'Show', microcomment %></td>
+        <td><%= link_to 'Edit', edit_microcomment_path(microcomment) %></td>
+        <td><%= link_to 'Destroy', microcomment, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Microcomment', new_microcomment_path %>
